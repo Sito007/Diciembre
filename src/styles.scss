@@ -1,0 +1,167 @@
+/* You can add global styles to this file, and also import other style files */
+
+html {
+    min-height: 100%;
+    position: relative;
+    width : 100%;
+}
+
+body{
+    margin: 0;
+    margin-bottom: 30px;
+    width : 100%;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.quintos-main {
+    width: 720px;
+    margin: auto;
+}
+
+.quintos-footer {
+    background: #FEA4FB;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    font-size: 10pt;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.quintos-loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    width: 80px;
+}
+
+.quintos-panel-header {
+    margin-top: 10px;
+    margin-bottom: 80px;
+    width: 100%;
+}
+
+.quintos-img-header {
+    width: 100%;
+}
+
+.quintos-panel-input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.quintos-panel-text {
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: justify;
+    font-size: 9pt;
+}
+
+.quintos-panel-button {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.quintos-button {
+    border: 2px solid #000;
+    -moz-border-radius: 6px;
+    -webkit-border-radius:6px;
+    background-color: #FEA4FB;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #000;
+    height: 25px;
+    width: 120px;
+}
+
+.quintos-input-text {
+    width: 720px;
+}
+
+@media (max-width: 720px) {
+
+    .quintos-main {
+        width: 680px;
+    }
+
+    .quintos-input-text {
+        width: 680px;
+    }
+
+}
+
+@media (max-width: 667px) {
+    .quintos-main {
+        width: 627px;
+    }
+
+    .quintos-input-text {
+        width: 627px;
+    }
+}
+
+@media (max-width: 568px) {
+    .quintos-main {
+        width: 528px;
+    }
+
+    .quintos-input-text {
+        width: 528px;
+    }
+}
+
+@media (max-width: 414px) {
+
+    .quintos-main {
+        width: 394px;
+    }
+
+    .quintos-input-text {
+        width: 394px;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .quintos-main {
+        width: 340px;
+    }
+
+    .quintos-input-text {
+        width: 340px;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    .quintos-main {
+        width: 320px;
+    }
+
+    .quintos-input-text {
+        width: 320px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .quintos-main {
+        width: 300px;
+    }
+
+    .quintos-input-text {
+        width: 300px;
+    }
+
+}

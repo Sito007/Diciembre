@@ -1,0 +1,64 @@
+<div class="quintos-main">
+    <div class="row">
+        <div class="col-sm-12 quintos-panel-header">
+            <img src="assets/images/header_quintos.png" class="quintos-img-header" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 quintos-panel-text">
+            <p style="font-weight: bold;">
+            Nombre :
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 quintos-panel-input">
+            <input type="text" class="quintos-input-text" [(ngModel)]="nombre" maxlength="100" placeholder="Ingrese su nombre" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 quintos-panel-text">
+            Escribe aqui tu nombre para que todas las fotografias y mensajes que envies esten firmados por ti.
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 quintos-panel-text">
+            <p style="font-size:8pt;">
+                <input type="checkbox" id="checkbox" name="checkbox" [(ngModel)]="checkbox" />
+                Acepto la politica de privacidad para poder continuar.<br />
+                <a (click)="verCondiciones(condicionesModal)">Ver politicas de privacidad</a>
+            </p>                                    
+        </div>
+    </div>    
+    <div class="row">
+        <div class="col-sm-12 quintos-panel-button">
+            <button class="quintos-button" (click)="entrar(mensajeModal)">Entrar</button>
+        </div>
+    </div>
+    <br />
+</div>
+<footer class="quintos-footer">
+    Salon de Bodas los Romeros - Eternal innova
+</footer>
+<ng-template #mensajeModal let-modal>
+    <div class="modal-header">
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>    
+    <div class="modal-body">
+        <div id="modal-mensaje"></div>
+    </div>
+</ng-template>
+<ng-template #condicionesModal let-modal>
+    <div class="modal-header">
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>    
+    <div class="modal-body">
+        <div id="modal-mensaje">
+            Condiciones
+        </div>
+    </div>
+</ng-template>
